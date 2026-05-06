@@ -36,13 +36,11 @@ sensor integration, and electromechanical design.
 | [DC Circuit Analyzer](#) | Applies Ohm's & Kirchhoff's laws computationally | C++ |
 | [Embedded GPIO Demo](#) | Bare-metal interrupt-driven I/O | C, Arduino |
 
-> Replace `#` links with actual repo URLs as you build them.
-
 ---
 
 ## 📫 Connect
 
-- 🔗 [LinkedIn](https://linkedin.com/in/YOUR-LINK-HERE)
+- 🔗 [LinkedIn] https://www.linkedin.com/in/dwij-joshi-14-constellation/
 - 🌐 Portfolio: *coming soon*
 
 ---
