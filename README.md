@@ -32,7 +32,7 @@ sensor integration, and electromechanical design.
 
 | Project | Description | Stack |
 |---|---|---|
-| [Heat Management Sim](#) | Temp-controlled system simulation | C++ |
+| [Heat Management System](https://github.com/dwijjoshi14/heat-management-system) | Arduino thermal control — TMP36, PWM fan, NeoPixel, LCD | C++, Arduino |
 | [DC Circuit Analyzer](#) | Applies Ohm's & Kirchhoff's laws computationally | C++ |
 | [Embedded GPIO Demo](#) | Bare-metal interrupt-driven I/O | C, Arduino |
 
