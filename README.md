@@ -12,7 +12,7 @@ sensor integration, and electromechanical design.
 
 | Category | Tools & Technologies |
 |---|---|
-| **Languages** | C++, C |
+| **Languages** | C++, C, Python |
 | **Hardware** | Arduino, STM32, GPIO, UART, I2C, SPI |
 | **Tools** | VS Code, PlatformIO, Git, MATLAB |
 | **Lab Equipment** | Vernier Sensors, Oscilloscope, Multimeter |
