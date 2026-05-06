@@ -3,7 +3,7 @@
 **Mechatronics Engineering Student @ Toronto Metropolitan University**  
 Expected Graduation: April 2029
 
-I build at the intersection of hardware and software — embedded systems,
+I build at the intersection of hardware and software: embedded systems,
 sensor integration, and electromechanical design.
 
 ---
