@@ -41,7 +41,7 @@ sensor integration, and electromechanical design.
 ## 📫 Connect
 
 - 🔗 [LinkedIn] https://www.linkedin.com/in/dwij-joshi-14-tron/
-- 🌐 Portfolio: coming soon
+- 🌐 Portfolio: *coming soon*
 
 ---
 
