@@ -33,7 +33,7 @@ sensor integration, and electromechanical design.
 | Project | Description | Stack |
 |---|---|---|
 | [Heat Management System](https://github.com/dwijjoshi14/heat-management-system) | Arduino thermal control — TMP36, PWM fan, NeoPixel, LCD | C++, Arduino |
-| [DC Circuit Analyzer](#) | Applies Ohm's & Kirchhoff's laws computationally | C++ |
+| [DC Circuit Analyzer](https://github.com/dwijjoshi14/dc-circuit-analyzer) | Applies Ohm's Law + KVL/KCL to series/parallel circuits | C++ |
 | [Embedded GPIO Demo](#) | Bare-metal interrupt-driven I/O | C, Arduino |
 
 ---
