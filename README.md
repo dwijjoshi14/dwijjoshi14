@@ -21,8 +21,6 @@ sensor integration, and electromechanical design.
 
 ## 🚧 Currently Building
 
-- **Heat Management System** — C++ simulation of a temperature-controlled
-  system with sensor, fan, LCD, and PID-style controller logic
 - **Embedded GPIO Demo** — Bare-metal button/interrupt project on Arduino
   (no IDE abstractions)
 
