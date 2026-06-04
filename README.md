@@ -13,10 +13,10 @@
 <br/>
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║  DWIJ JOSHI  //  MECHATRONICS ENG  //  TMU  //  2029        ║
-║  Scarborough, ON  ·  Embedded · Firmware · Control Systems  ║
-╚══════════════════════════════════════════════════════════════╝
+           ╔══════════════════════════════════════════════════════════════╗
+           ║  DWIJ JOSHI  //  MECHATRONICS ENG  //  TMU  //  2029         ║
+           ║  Scarborough, ON  ·  Embedded · Firmware · Control Systems   ║
+           ╚══════════════════════════════════════════════════════════════╝
 ```
 
 <br/>
@@ -41,8 +41,7 @@ program    : Mechatronics Engineering — Toronto Metropolitan University
 grad_year  : April 2029
 location   : Scarborough, ON
 focus      : Embedded Systems · Firmware · Robotics · Control Systems
-co_op      : Seeking Jan 2027 — target: Tesla, Magna, Celestica,
-             Zebra Technologies, Rockwell, Teledyne, Keysight
+co_op      : Seeking Jan 2027 
 currently  : Building an IMU-driven robotic arm
              Learning C++ (learncpp.com)
              Completing GPIO demo on Arduino
