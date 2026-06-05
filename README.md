@@ -5,7 +5,6 @@
 
 <br/>
 
-<!-- Red divider -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=CC0000&height=3&section=header&width=100%" />
 
 </div>
@@ -13,10 +12,10 @@
 <br/>
 
 ```
-                                ╔══════════════════════════════════════════════════════════════╗
-                                ║  DWIJ JOSHI  //  MECHATRONICS ENG  //  TMU  //  2029         ║
-                                ║  Scarborough, ON  ·  Embedded · Firmware · Control Systems   ║
-                                ╚══════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════╗
+║  DWIJ JOSHI  //  MECHATRONICS ENG  //  TMU  //  2029        ║
+║  Scarborough, ON  ·  Embedded · Firmware · Control Systems  ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 <br/>
@@ -41,8 +40,9 @@ program    : Mechatronics Engineering — Toronto Metropolitan University
 grad_year  : April 2029
 location   : Scarborough, ON
 focus      : Embedded Systems · Firmware · Robotics · Control Systems
-co_op      : Seeking Jan 2027 
-currently  : Building an IMU-driven robotic arm
+co_op      : Seeking Jan 2027 — target: Tesla, Magna, Celestica,
+             Zebra Technologies, Rockwell, Teledyne, Keysight
+currently  : Building an IMU-driven robotic arm (STM32 + FreeRTOS)
              Learning C++ (learncpp.com)
              Completing GPIO demo on Arduino
 ```
@@ -79,10 +79,10 @@ currently  : Building an IMU-driven robotic arm
 
 | Project | Description | Stack |
 |---|---|---|
-| 🦾 [**imu-robotic-arm**](https://github.com/dwijjoshi14/imu-robotic-arm) | IMU-based robotic arm with real-time orientation control | C++, I2C, MPU-6050, Arduino |
-| ⚡ [**gpio-arduino-demo**](https://github.com/dwijjoshi14/gpio-arduino-demo) | GPIO input/output demo: buttons, LEDs, serial monitor | C, Arduino |
-| 🌐 [**portfolio-v6**](https://github.com/dwijjoshi14/dwijjoshi14.github.io) | Personal portfolio — deployed on GitHub Pages | HTML, CSS, JS |
-| 🌱 [**can-crops-website**](https://github.com/dwijjoshi14/can-crops-website) | Company website for Can Crops Inc. | HTML, CSS, JS |
+| 🦾 [**imu-robotic-arm**](https://github.com/dwijjoshi14/imu-robotic-arm) | STM32 + FreeRTOS gesture-driven 3-DOF servo arm — MPU-6050, complementary filter, sub-10ms latency | C++, STM32, FreeRTOS, MPU-6050 |
+| 🌡️ [**heat-management-system**](https://github.com/dwijjoshi14/heat-management-system) | Arduino closed-loop thermal controller — TMP36, PID-style PWM fan, NeoPixel status, LCD output | C++, Arduino, PID |
+| 🔌 [**dc-circuit-analyzer**](https://github.com/dwijjoshi14/dc-circuit-analyzer) | CLI solver for arbitrary DC networks — Ohm's Law, KVL/KCL, series/parallel. Results within 2% of bench measurements | C++, CLI |
+| ⚙️ [**rtos-task-scheduler**](https://github.com/dwijjoshi14/rtos-task-scheduler) | FreeRTOS 3-task temperature control system — queue, semaphore, mutex. POSIX simulation layer for Linux; STM32-portable | C, FreeRTOS, STM32 |
 
 </div>
 
@@ -90,11 +90,11 @@ currently  : Building an IMU-driven robotic arm
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=CC0000&height=3&section=header&width=100%" />
 
-## `> contribution_graph`
+## `> top_languages`
 
 <div align="center">
 
-[![Dwij's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dwijjoshi14&bg_color=0d1117&color=CC0000&line=CC0000&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dwijjoshi14&layout=compact&theme=dark&hide_border=true&title_color=CC0000&text_color=ffffff&bg_color=0d1117&langs_count=6)](https://github.com/anuraghazra/github-readme-stats)
 
 </div>
 
@@ -102,13 +102,19 @@ currently  : Building an IMU-driven robotic arm
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=CC0000&height=3&section=header&width=100%" />
 
-## `> streak_tracker`
+## `> currently_building`
 
-<div align="center">
+```bash
+$ cat status.log
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=dwijjoshi14&theme=dark&hide_border=true&ring=CC0000&fire=CC0000&currStreakLabel=CC0000&sideLabels=CC0000)](https://git.io/streak-stats)
+[ACTIVE]   imu-robotic-arm      — STM32 + FreeRTOS + MPU-6050 · hardware arriving soon
+[ACTIVE]   gpio-arduino-demo    — GPIO input/output · LED/button control
+[LEARNING] C++                  — learncpp.com · currently on arrays & loops
+[TARGET]   co-op Jan 2027       — embedded systems / firmware / mechatronics
 
-</div>
+$ echo "always building."
+always building.
+```
 
 <br/>
 
