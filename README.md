@@ -1,15 +1,10 @@
 <div align="center">
 
-<!-- Typing SVG Header -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=28&duration=3000&pause=1000&color=CC0000&center=true&vCenter=true&width=700&lines=Hey%2C+I'm+Dwij+Joshi;Mechatronics+%40+TMU;Embedded+Systems+%7C+Firmware+%7C+Robotics;Building+things+that+move+and+think." alt="Typing SVG" /></a>
 
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=CC0000&height=3&section=header&width=100%" />
-
-</div>
-
-<br/>
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
@@ -19,8 +14,6 @@
 ```
 
 <br/>
-
-<div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-dwij--joshi--14--tron-CC0000?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dwij-joshi-14-tron)
 [![Portfolio](https://img.shields.io/badge/Portfolio-dwijjoshi14.github.io-CC0000?style=for-the-badge&logo=githubpages&logoColor=white)](https://dwijjoshi14.github.io)
@@ -40,11 +33,7 @@ program    : Mechatronics Engineering — Toronto Metropolitan University
 grad_year  : April 2029
 location   : Scarborough, ON
 focus      : Embedded Systems · Firmware · Robotics · Control Systems
-co_op      : Seeking Jan 2027 — target: Tesla, Magna, Celestica,
-             Zebra Technologies, Rockwell, Teledyne, Keysight
-currently  : Building an IMU-driven robotic arm (STM32 + FreeRTOS)
-             Learning C++ (learncpp.com)
-             Completing GPIO demo on Arduino
+co_op      : Seeking Jan 2027 — embedded systems / firmware / mechatronics
 ```
 
 <br/>
@@ -81,7 +70,7 @@ currently  : Building an IMU-driven robotic arm (STM32 + FreeRTOS)
 |---|---|---|
 | 🦾 [**imu-robotic-arm**](https://github.com/dwijjoshi14/imu-robotic-arm) | STM32 + FreeRTOS gesture-driven 3-DOF servo arm — MPU-6050, complementary filter, sub-10ms latency | C++, STM32, FreeRTOS, MPU-6050 |
 | 🌡️ [**heat-management-system**](https://github.com/dwijjoshi14/heat-management-system) | Arduino closed-loop thermal controller — TMP36, PID-style PWM fan, NeoPixel status, LCD output | C++, Arduino, PID |
-| 🔌 [**dc-circuit-analyzer**](https://github.com/dwijjoshi14/dc-circuit-analyzer) | CLI solver for arbitrary DC networks — Ohm's Law, KVL/KCL, series/parallel. Results within 2% of bench measurements | C++, CLI |
+| 🔌 [**dc-circuit-analyzer**](https://github.com/dwijjoshi14/dc-circuit-analyzer) | CLI solver for arbitrary DC networks — Ohm's Law, KVL/KCL, series/parallel, within 2% of bench measurements | C++, CLI |
 | ⚙️ [**rtos-task-scheduler**](https://github.com/dwijjoshi14/rtos-task-scheduler) | FreeRTOS 3-task temperature control system — queue, semaphore, mutex. POSIX simulation layer for Linux; STM32-portable | C, FreeRTOS, STM32 |
 
 </div>
@@ -94,7 +83,7 @@ currently  : Building an IMU-driven robotic arm (STM32 + FreeRTOS)
 
 <div align="center">
 
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dwijjoshi14&layout=compact&theme=dark&hide_border=true&title_color=CC0000&text_color=ffffff&bg_color=0d1117&langs_count=6)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=dwijjoshi14&layout=compact&theme=dark&hide_border=true&title_color=CC0000&text_color=ffffff&bg_color=0d1117&langs_count=6)](https://github.com/anuraghazra/github-readme-stats)
 
 </div>
 
@@ -109,11 +98,7 @@ $ cat status.log
 
 [ACTIVE]   imu-robotic-arm      — STM32 + FreeRTOS + MPU-6050 · hardware arriving soon
 [ACTIVE]   gpio-arduino-demo    — GPIO input/output · LED/button control
-[LEARNING] C++                  — learncpp.com · currently on arrays & loops
 [TARGET]   co-op Jan 2027       — embedded systems / firmware / mechatronics
-
-$ echo "always building."
-always building.
 ```
 
 <br/>
