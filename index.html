@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dwij Joshi</title>
+<title>Dwij Joshi — Mechatronics Engineer</title>
 <script>
 (function(apiKey){
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
@@ -19,7 +19,377 @@ pendo.initialize({
   }
 });
 </script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #fff; }
+  a { color: #CC0000; text-decoration: none; }
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+  h1, h2 { margin-bottom: 1rem; }
+  h1 { font-size: 2rem; text-align: center; }
+  h2 { font-size: 1.3rem; color: #CC0000; border-bottom: 2px solid #CC0000; padding-bottom: 0.3rem; margin-top: 2.5rem; }
+  .subtitle { text-align: center; color: #aaa; margin-bottom: 2rem; }
+  .divider { height: 2px; background: #CC0000; margin: 2rem 0; }
+
+  /* Skills filter */
+  .skills-filter { margin: 1rem 0; }
+  .skills-filter input { width: 100%; padding: 0.5rem; background: #161b22; border: 1px solid #30363d; color: #fff; border-radius: 4px; font-size: 0.95rem; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.8rem; }
+  .skill-tag { padding: 0.35rem 0.75rem; background: #161b22; border: 1px solid #30363d; border-radius: 4px; font-size: 0.85rem; }
+  .skill-tag.hidden { display: none; }
+  .filter-count { color: #aaa; font-size: 0.85rem; margin-top: 0.4rem; }
+
+  /* Projects */
+  .project-card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; margin-bottom: 1rem; }
+  .project-card h3 { margin-bottom: 0.4rem; }
+  .project-card p { color: #aaa; font-size: 0.9rem; margin-bottom: 0.6rem; }
+  .project-card .stack { font-size: 0.8rem; color: #888; margin-bottom: 0.6rem; }
+  .project-btns { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; cursor: pointer; border: none; color: #fff; }
+  .btn-primary { background: #CC0000; }
+  .btn-secondary { background: #30363d; }
+
+  /* Contact form */
+  .form-group { margin-bottom: 1rem; }
+  .form-group label { display: block; margin-bottom: 0.3rem; font-size: 0.9rem; color: #aaa; }
+  .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.5rem; background: #161b22; border: 1px solid #30363d; color: #fff; border-radius: 4px; font-size: 0.9rem; }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-msg { margin-top: 0.5rem; font-size: 0.9rem; }
+
+  /* Share modal */
+  .share-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; align-items: center; justify-content: center; }
+  .share-overlay.active { display: flex; }
+  .share-modal { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.5rem; width: 90%; max-width: 400px; }
+  .share-modal h3 { margin-bottom: 1rem; }
+  .share-options { display: flex; flex-direction: column; gap: 0.5rem; }
+  .share-options button { text-align: left; }
+
+  /* Resume */
+  .resume-section { text-align: center; margin: 1rem 0; }
+</style>
 </head>
 <body>
+<div class="container">
+
+  <h1>Dwij Joshi</h1>
+  <p class="subtitle">Mechatronics Engineering — Toronto Metropolitan University — Class of 2029</p>
+  <p class="subtitle">Embedded Systems · Firmware · Robotics · Control Systems<br/>Seeking Co-op Jan 2027</p>
+
+  <div class="divider"></div>
+
+  <!-- Resume Download -->
+  <div class="resume-section">
+    <button class="btn btn-primary" id="resume-download-btn">📄 Download Resume (PDF)</button>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Skills Section with Filter -->
+  <h2>> tech_stack.sh</h2>
+  <div class="skills-filter">
+    <input type="text" id="skills-search" placeholder="Filter skills..." />
+    <div class="filter-count" id="filter-count"></div>
+  </div>
+  <div class="skills-grid" id="skills-grid"></div>
+
+  <div class="divider"></div>
+
+  <!-- Projects Section -->
+  <h2>> pinned_projects/</h2>
+  <div id="projects-list"></div>
+
+  <div class="divider"></div>
+
+  <!-- Contact Form -->
+  <h2>> contact.sh</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="sender-name">Name</label>
+      <input type="text" id="sender-name" required />
+    </div>
+    <div class="form-group">
+      <label for="sender-email">Email</label>
+      <input type="email" id="sender-email" required />
+    </div>
+    <div class="form-group">
+      <label for="msg-subject">Subject</label>
+      <input type="text" id="msg-subject" required />
+    </div>
+    <div class="form-group">
+      <label for="referral-source">How did you find me?</label>
+      <select id="referral-source">
+        <option value="github">GitHub</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="search">Search Engine</option>
+        <option value="referral">Referral</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="msg-body">Message</label>
+      <textarea id="msg-body" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="form-msg" id="form-msg"></div>
+  </form>
+
+  <div class="divider"></div>
+
+  <!-- Share Button -->
+  <div style="text-align:center;">
+    <button class="btn btn-secondary" id="share-btn">🔗 Share Profile</button>
+  </div>
+
+  <!-- Share Modal -->
+  <div class="share-overlay" id="share-overlay">
+    <div class="share-modal">
+      <h3>Share this profile</h3>
+      <div class="share-options">
+        <button class="btn btn-secondary share-option" data-method="clipboard" data-platform="clipboard">📋 Copy Link</button>
+        <button class="btn btn-secondary share-option" data-method="social" data-platform="linkedin">💼 Share on LinkedIn</button>
+        <button class="btn btn-secondary share-option" data-method="social" data-platform="twitter">🐦 Share on Twitter</button>
+        <button class="btn btn-secondary share-option" data-method="email" data-platform="email">✉️ Share via Email</button>
+      </div>
+      <br/>
+      <button class="btn btn-secondary" id="share-close">Close</button>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <p class="subtitle"><em>// always building. always shipping.</em></p>
+</div>
+
+<script>
+// ───────────────────────────────────────────
+// Data
+// ───────────────────────────────────────────
+var skills = [
+  { name: "C++", category: "Languages" },
+  { name: "C", category: "Languages" },
+  { name: "Python", category: "Languages" },
+  { name: "JavaScript", category: "Languages" },
+  { name: "HTML", category: "Languages" },
+  { name: "CSS", category: "Languages" },
+  { name: "Git", category: "Tools & Platforms" },
+  { name: "GitHub", category: "Tools & Platforms" },
+  { name: "VS Code", category: "Tools & Platforms" },
+  { name: "Arduino", category: "Tools & Platforms" },
+  { name: "Linux", category: "Tools & Platforms" },
+  { name: "Figma", category: "Tools & Platforms" },
+  { name: "React", category: "Frameworks & Environments" },
+  { name: "Node.js", category: "Frameworks & Environments" },
+  { name: "CMake", category: "Frameworks & Environments" }
+];
+
+var projects = [
+  { name: "imu-robotic-arm", emoji: "🦾", desc: "STM32 + FreeRTOS gesture-driven 3-DOF servo arm — MPU-6050, complementary filter, sub-10ms latency", stack: "C++, STM32, FreeRTOS, MPU-6050", repo: "https://github.com/dwijjoshi14/imu-robotic-arm" },
+  { name: "heat-management-system", emoji: "🌡️", desc: "Arduino closed-loop thermal controller — TMP36, PID-style PWM fan, NeoPixel status, LCD output", stack: "C++, Arduino, PID", repo: "https://github.com/dwijjoshi14/heat-management-system" },
+  { name: "dc-circuit-analyzer", emoji: "🔌", desc: "CLI solver for arbitrary DC networks — Ohm's Law, KVL/KCL, series/parallel, within 2% of bench measurements", stack: "C++, CLI", repo: "https://github.com/dwijjoshi14/dc-circuit-analyzer" },
+  { name: "rtos-task-scheduler", emoji: "⚙️", desc: "FreeRTOS 3-task temperature control system — queue, semaphore, mutex. POSIX simulation layer for Linux; STM32-portable", stack: "C, FreeRTOS, STM32", repo: "https://github.com/dwijjoshi14/rtos-task-scheduler" }
+];
+
+// ───────────────────────────────────────────
+// Skills rendering and filter
+// ───────────────────────────────────────────
+var skillsGrid = document.getElementById("skills-grid");
+var skillsSearch = document.getElementById("skills-search");
+var filterCountEl = document.getElementById("filter-count");
+
+function renderSkills() {
+  skillsGrid.innerHTML = "";
+  skills.forEach(function(s) {
+    var tag = document.createElement("span");
+    tag.className = "skill-tag";
+    tag.textContent = s.name;
+    tag.setAttribute("data-category", s.category);
+    skillsGrid.appendChild(tag);
+  });
+  filterCountEl.textContent = "";
+}
+renderSkills();
+
+var filterDebounceTimer = null;
+skillsSearch.addEventListener("input", function() {
+  clearTimeout(filterDebounceTimer);
+  var query = skillsSearch.value.trim().toLowerCase();
+
+  // Apply visual filter immediately
+  var tags = skillsGrid.querySelectorAll(".skill-tag");
+  var matched = [];
+  tags.forEach(function(tag) {
+    var name = tag.textContent.toLowerCase();
+    var cat = tag.getAttribute("data-category").toLowerCase();
+    var visible = !query || name.indexOf(query) !== -1 || cat.indexOf(query) !== -1;
+    tag.classList.toggle("hidden", !visible);
+    if (visible) matched.push(tag.textContent);
+  });
+
+  filterCountEl.textContent = query ? matched.length + " of " + skills.length + " skills matched" : "";
+
+  // Debounce the track event to avoid firing on every keystroke
+  if (query) {
+    filterDebounceTimer = setTimeout(function() {
+      // Pendo Track Event: skills_filter_applied
+      pendo.track("skills_filter_applied", {
+        filter_category: "all",
+        filter_query: query.substring(0, 50),
+        results_count: matched.length,
+        skill_names_matched: matched.slice(0, 10).join(", ")
+      });
+    }, 600);
+  }
+});
+
+// ───────────────────────────────────────────
+// Projects rendering and demo launch
+// ───────────────────────────────────────────
+var projectsList = document.getElementById("projects-list");
+
+projects.forEach(function(proj) {
+  var card = document.createElement("div");
+  card.className = "project-card";
+  card.innerHTML =
+    "<h3>" + proj.emoji + " " + proj.name + "</h3>" +
+    "<p>" + proj.desc + "</p>" +
+    '<div class="stack">' + proj.stack + "</div>" +
+    '<div class="project-btns">' +
+      '<a href="' + proj.repo + '" target="_blank" class="btn btn-secondary">View Source</a>' +
+      '<button class="btn btn-primary demo-btn" data-project="' + proj.name + '" data-stack="' + proj.stack + '">Launch Demo</button>' +
+    "</div>";
+  projectsList.appendChild(card);
+});
+
+document.addEventListener("click", function(e) {
+  if (!e.target.classList.contains("demo-btn")) return;
+  var projectName = e.target.getAttribute("data-project");
+  var projectStack = e.target.getAttribute("data-stack");
+  var startTime = Date.now();
+
+  // Simulate demo loading
+  e.target.textContent = "Loading...";
+  e.target.disabled = true;
+
+  setTimeout(function() {
+    var loadTime = Date.now() - startTime;
+    e.target.textContent = "Launch Demo";
+    e.target.disabled = false;
+
+    // Pendo Track Event: project_demo_launched
+    pendo.track("project_demo_launched", {
+      project_name: projectName,
+      project_stack: projectStack,
+      demo_type: "interactive",
+      demo_load_time_ms: loadTime
+    });
+
+    window.open("https://github.com/dwijjoshi14/" + projectName, "_blank");
+  }, 500);
+});
+
+// ───────────────────────────────────────────
+// Contact form submission
+// ───────────────────────────────────────────
+var contactForm = document.getElementById("contact-form");
+var formMsg = document.getElementById("form-msg");
+
+contactForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  var senderName = document.getElementById("sender-name").value.trim();
+  var senderEmail = document.getElementById("sender-email").value.trim();
+  var subject = document.getElementById("msg-subject").value.trim();
+  var body = document.getElementById("msg-body").value.trim();
+  var referral = document.getElementById("referral-source").value;
+
+  // Pendo Track Event: contact_form_submitted
+  pendo.track("contact_form_submitted", {
+    sender_name: senderName.substring(0, 50),
+    sender_email: senderEmail.substring(0, 50),
+    message_subject: subject.substring(0, 100),
+    message_length: body.length,
+    referral_source: referral
+  });
+
+  // Open mailto link with form data
+  var mailtoUrl = "mailto:dwijjoshi14@gmail.com" +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent("From: " + senderName + " (" + senderEmail + ")\n\n" + body);
+  window.location.href = mailtoUrl;
+
+  formMsg.textContent = "Opening your email client...";
+  formMsg.style.color = "#4CAF50";
+  contactForm.reset();
+});
+
+// ───────────────────────────────────────────
+// Resume download
+// ───────────────────────────────────────────
+var resumeBtn = document.getElementById("resume-download-btn");
+
+resumeBtn.addEventListener("click", function() {
+  var fileName = "Dwij_Joshi_Resume.pdf";
+
+  // Pendo Track Event: resume_downloaded
+  pendo.track("resume_downloaded", {
+    file_type: "pdf",
+    file_size: "unknown",
+    file_name: fileName,
+    download_source_section: "hero"
+  });
+
+  // Trigger the download (file would be hosted in the repo)
+  var link = document.createElement("a");
+  link.href = fileName;
+  link.download = fileName;
+  link.click();
+});
+
+// ───────────────────────────────────────────
+// Profile share
+// ───────────────────────────────────────────
+var shareBtn = document.getElementById("share-btn");
+var shareOverlay = document.getElementById("share-overlay");
+var shareClose = document.getElementById("share-close");
+
+shareBtn.addEventListener("click", function() {
+  shareOverlay.classList.add("active");
+});
+shareClose.addEventListener("click", function() {
+  shareOverlay.classList.remove("active");
+});
+shareOverlay.addEventListener("click", function(e) {
+  if (e.target === shareOverlay) shareOverlay.classList.remove("active");
+});
+
+document.querySelectorAll(".share-option").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var method = btn.getAttribute("data-method");
+    var platform = btn.getAttribute("data-platform");
+    var shareUrl = window.location.href;
+
+    // Pendo Track Event: profile_shared
+    pendo.track("profile_shared", {
+      share_method: method,
+      share_platform: platform,
+      shared_section: "full_profile",
+      share_url: shareUrl.substring(0, 200)
+    });
+
+    if (platform === "clipboard") {
+      navigator.clipboard.writeText(shareUrl).then(function() {
+        btn.textContent = "✅ Copied!";
+        setTimeout(function() { btn.textContent = "📋 Copy Link"; }, 2000);
+      });
+    } else if (platform === "linkedin") {
+      window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(shareUrl), "_blank");
+    } else if (platform === "twitter") {
+      window.open("https://twitter.com/intent/tweet?url=" + encodeURIComponent(shareUrl) + "&text=" + encodeURIComponent("Check out Dwij Joshi's portfolio!"), "_blank");
+    } else if (platform === "email") {
+      window.location.href = "mailto:?subject=" + encodeURIComponent("Check out this portfolio") + "&body=" + encodeURIComponent(shareUrl);
+    }
+
+    shareOverlay.classList.remove("active");
+  });
+});
+</script>
 </body>
 </html>
