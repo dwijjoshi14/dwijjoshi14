@@ -72,6 +72,7 @@ co_op      : Seeking Jan 2027 — embedded systems / firmware / mechatronics
 | 🌡️ [**heat-management-system**](https://github.com/dwijjoshi14/heat-management-system) | Arduino closed-loop thermal controller — TMP36, PID-style PWM fan, NeoPixel status, LCD output | C++, Arduino, PID |
 | 🔌 [**dc-circuit-analyzer**](https://github.com/dwijjoshi14/dc-circuit-analyzer) | CLI solver for arbitrary DC networks — Ohm's Law, KVL/KCL, series/parallel, within 2% of bench measurements | C++, CLI |
 | ⚙️ [**rtos-task-scheduler**](https://github.com/dwijjoshi14/rtos-task-scheduler) | FreeRTOS 3-task temperature control system — queue, semaphore, mutex. POSIX simulation layer for Linux; STM32-portable | C, FreeRTOS, STM32 |
+| 🏥 [**ClearShift**](https://github.com/dwijjoshi14/ClearShift) | Hackathon build — structured shift handoffs for clinic teams. Live full-stack app with Supabase, flag system, and AI brief generation | Next.js, Supabase, TypeScript |
 
 </div>
 
@@ -96,6 +97,7 @@ co_op      : Seeking Jan 2027 — embedded systems / firmware / mechatronics
 ```bash
 $ cat status.log
 
+[SHIPPED]  ClearShift           — full-stack handoff tool · Mind the Product hackathon · live on Vercel
 [ACTIVE]   imu-robotic-arm      — STM32 + FreeRTOS + MPU-6050 · hardware arriving soon
 [ACTIVE]   gpio-arduino-demo    — GPIO input/output · LED/button control
 [TARGET]   co-op Jan 2027       — embedded systems / firmware / mechatronics
