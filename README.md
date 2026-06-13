@@ -7,10 +7,10 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=CC0000&height=3&section=header&width=100%" />
 
 ```
-                              ╔══════════════════════════════════════════════════════════════╗
-                              ║  DWIJ JOSHI  //  MECHATRONICS ENG  //  TMU  //  2029         ║
-                              ║  Scarborough, ON  ·  Embedded · Firmware · Control Systems   ║
-                              ╚══════════════════════════════════════════════════════════════╝
+                                ╔══════════════════════════════════════════════════════════════╗
+                                ║  DWIJ JOSHI  //  MECHATRONICS ENG  //  TMU  //  2029         ║
+                                ║  Scarborough, ON  ·  Embedded · Firmware · Control Systems   ║
+                                ╚══════════════════════════════════════════════════════════════╝
 ```
 
 <br/>
